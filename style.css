@@ -1,0 +1,140 @@
+:root {
+    --primary-color: #f3f3f3;
+    --black-900: #1e2025;
+    --blue-600: #2563eb;
+    --black-800: #22252a;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-wrap:wrap;
+    height: 100vh;
+}
+.left-half {
+    background: rgb(0,48,49);
+background: linear-gradient(0deg, rgba(0,48,49,1) 0%, rgba(45,253,198,1) 100%);
+    flex: 50%;
+    text-align: center;
+    padding-top: 25vh;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+input {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1.4rem 1rem;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    width: 75%;
+    color:rgb(0,48,49) ;
+}
+
+button {
+    border-radius: 0.5rem;
+    background-color: rgba(45,253,198,1);
+    color: var(--primary-color);
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 75%;
+    margin-top: 1rem;
+}
+
+.right-half {
+    background: rgb(28,209,70);
+    background: linear-gradient(0deg, rgba(28,209,70,1) 0%, rgba(45,253,198,1) 100%);
+    flex: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.right-half > div {
+    width: 70%;
+    margin: auto;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+#footer{
+    color: var(--primary-color);
+    text-decoration: none;
+    position: fixed;
+    width: 752px;
+    bottom: 20px;
+    align-content: center;
+    float: none;
+    margin-left: calc(50% - 376px);
+  }
+  
+  a,p{
+    text-decoration: none;
+    color: var(--primary-color);
+    letter-spacing: 6px;
+    transition: all 0.5s ease-in-out;
+    width: auto;
+    float: left;
+    margin-right: 9px;
+  }
+  
+  a:hover{
+    color: #fff;
+    letter-spacing: 2px;
+    transition: all 0.5s ease-in-out;
+  }
+
+   .copyright{
+    margin: 1rem 0rem 1rem 15rem;
+  }
+  #message-output{
+    text-decoration: none;
+    color:var(--primary-color);
+    letter-spacing: 4px;
+    width: auto;
+    float: left;
+    margin-right: 9px;
+  }
+
+  #message-output:hover{
+    color: #fff;
+    letter-spacing: 2px;
+    transition: all 0.5s ease-in-out;
+  }
+ 
+@media screen and (max-width: 600px) {
+    .left-half{
+        flex:100%;
+        padding-top: 15vh;
+        padding-bottom: 10vh;
+    }
+
+    .right-half{
+        flex:100%;
+        
+    }
+    #message-output{
+        font-size: 1.2rem;
+        padding: 1rem;
+        margin: 5rem;
+    }
+
+    #footer p, a{
+        display: none;
+    }
+ }
