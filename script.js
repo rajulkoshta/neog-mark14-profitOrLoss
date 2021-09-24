@@ -10,12 +10,12 @@ tellMeBtn.addEventListener("click", btnHandler);
 function calculateProfitOrLoss(initial, current, quantity) {
     if (current > initial) {
         var profit = (current - initial) * quantity;
-        var profitPercentage = (profit / initial) * 100;
+        var profitPercentage = ((current-initial) / initial) * 100;
         message.style.color = "green";
         showmessage(`Yay! 🤑🤑🥳🥳your profit is ${profit} and profit percentage ${profitPercentage.toFixed(2)}%`);
     } else if (initial > current) {
         var loss = (initial - current) * quantity;
-        var lossPercentage = (loss / initial) * 100;
+        var lossPercentage = ((initial-current) / initial) * 100;
         message.style.color = "red";
         showmessage(`uffff! 😔😌😩😩your loss is ${loss} and loss percentage ${lossPercentage.toFixed(2)}%`);
 
